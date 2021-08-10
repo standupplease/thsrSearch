@@ -61,11 +61,6 @@ async function queryTrainInfomation(originStation,destination,yyyyMMDD){
 }
 
 
-
-
-
-
-
 searchAllStationsBtn.addEventListener('click', async function () {
    
     let stationListAry = await doGetAllStation()

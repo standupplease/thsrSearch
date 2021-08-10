@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>:target pseudoclass example</title>
+    <style>
+        /* div {
+            color: olive;
+        } */
+
+        div.bb {
+            color: rgb(0, 217, 255);
+        }
+
+        li:nth-of-type(odd) {
+            margin: 2px;
+            outline: 2px solid red;
+        }
+
+        /* li:nth-child(odd) {
+            border: 2px solid blue;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>1 (1 li)</li>
+        <li>2 (2 li)</li>
+        <div class="bb">3 (div)
+            <p class="aa">123</p>
+        </div>
+        <li>4 (3 li)
+            <ul class="nested-list">
+                <li>4-1</li>
+                <li>4-2</li>
+                <li>4-3</li>
+                <li>4-4</li>
+                <li>4-5</li>
+            </ul>
+        </li>
+        <li>5 (4 li)</li>
+        <li>6 (5 li)</li>
+    </ul>
+    <ul>
+        <li>1 (1 li)</li>
+        <li>2 (2 li)</li>
+        <div>3 (div)</div>
+        <li>4 (3 li)</li>
+        <li>5 (4 li)</li>
+        <li>6 (5 li)</li>
+    </ul>
+</body>
+
+</html>
