@@ -16,52 +16,112 @@
     <div id="stationsList"></div>
   </div>
 
+  <section class="querySection">
+    <div class="queryZone">
 
-  <div class="querZone">
-    <label class="querStationText">啟程站 : </label>
-    <select name="originStation" id="originStation">
-      <option value="0990">南港</option>
-      <option value="1000">台北</option>
-      <option value="1010">板橋</option>
-      <option value="1020">桃園</option>
+      <div class="zone2">
+        <p class="querStationText">啟程站 : </p>
+        <select name="originStation" id="originStation">
+          <option value="0990">南港</option>
+          <option value="1000">台北</option>
+          <option value="1010">板橋</option>
+          <option value="1020">桃園</option>
 
-      <option value="1030">新竹</option>
-      <option value="1035">苗栗</option>
-      <option value="1040">台中</option>
-      <option value="1043">彰化</option>
+          <option value="1030">新竹</option>
+          <option value="1035">苗栗</option>
+          <option value="1040">台中</option>
+          <option value="1043">彰化</option>
 
-      <option value="1047">雲林</option>
-      <option value="1050">嘉義</option>
-      <option value="1060">台南</option>
-      <option value="1070">左營</option>
-    </select>
+          <option value="1047">雲林</option>
+          <option value="1050">嘉義</option>
+          <option value="1060">台南</option>
+          <option value="1070">左營</option>
+        </select>
+      </div>
 
-    <label>去程時間 : </label>
-    <input tpye="date">
+      <div class="zone3">
+        <img src="asset/sync_alt.svg"  width="42" height="42" >
+      </div>
 
-    <lable>去程時刻 : </lable>
+      
 
-    <label>----------->></label>
+      <div class="zone2">
+        <p class="querStationText">到達站 : </p>
+        <select name="destinationStation" id="destinationStation">
+          <option value="0990">南港</option>
+          <option value="1000">台北</option>
+          <option value="1010">板橋</option>
+          <option value="1020">桃園</option>
 
-    <label>到達站 : </label>
-    <select name="destinationStation" id="destinationStation">
-      <option value="0990">南港</option>
-      <option value="1000">台北</option>
-      <option value="1010">板橋</option>
-      <option value="1020">桃園</option>
+          <option value="1030">新竹</option>
+          <option value="1035">苗栗</option>
+          <option value="1040">台中</option>
+          <option value="1043">彰化</option>
 
-      <option value="1030">新竹</option>
-      <option value="1035">苗栗</option>
-      <option value="1040">台中</option>
-      <option value="1043">彰化</option>
+          <option value="1047">雲林</option>
+          <option value="1050">嘉義</option>
+          <option value="1060">台南</option>
+          <option value="1070">左營</option>
+        </select>
+      </div>
 
-      <option value="1047">雲林</option>
-      <option value="1050">嘉義</option>
-      <option value="1060">台南</option>
-      <option value="1070">左營</option>
-    </select>
-    <button id="queryTrainInfo">查詢</button>
-  </div>
+      <div class="zone2">
+        <p>   </p>
+        <select name="destinationStation" id="selectOne-wayOrRound-trip">
+          <option value="oneWay">單程</option>
+          <option value="roundWay">來回程</option>
+        </select>
+      </div>
+
+      <div class="zone1">
+        <p class="querStationText">去程日期 : </p>
+        <input type="date" id="origindate">
+
+        <div class="backDateTime">
+          <p>回程日期 : </p>
+          <input type="date" id="destinationdate">
+        </div>
+
+      </div>
+
+
+
+      <div class="zone1">
+        <p class="querStationText">去程時間 : </p>
+        <input type="time" id="origintime">
+
+        <div class="backDateTime">
+          <p>回程時間 : </p>
+          <input type="time" id="destinationtime">
+        </div>
+      </div>
+
+
+      <div class="zone2">
+        <p>   </p>
+        <select name="discount" id="discount">
+          <option value="1">優惠1</option>
+          <option value="2">優惠2</option>
+        </select>
+      </div>
+
+
+
+
+
+
+
+      <!-- 
+
+     -->
+
+
+      <button class="querBtn" id="queryTrainInfo">查詢</button>
+    </div>
+  </section>
+
+  
+
 
   <div id="queryTrainInfoList"></div>
 

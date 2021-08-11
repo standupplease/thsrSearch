@@ -1,7 +1,62 @@
+.querySection{
+    width: 100%;
+    background-color: #F9F9F9 !important;
+    padding: 40px;
+    display: block;
+    text-align: center;
+}
+
 .queryZone{
+    text-align: center;
+    display:flex;
     
 }
 
+
+.zone1{
+    margin:5px;
+    width:15%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.zone2{
+    margin:5px;
+    width:8%;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+.zone3{
+    padding: 3px;
+    margin:5px;
+    width:5%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.querBtn{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    width : 100px;
+    background-color: #ca4f0f;
+    color: white;
+    border: 0;
+    height:50px
+
+}
+
 .querStationText{
-    
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+
+.backDateTime {
+    display:none;
 }
